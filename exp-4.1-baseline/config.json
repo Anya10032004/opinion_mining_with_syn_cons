@@ -50,7 +50,7 @@
 	"neg_threshold": 80,
 
     "word_embedding" : "../data/embeddings/glove.840B.300d.txt.filtered.opinion0.conll12.train.txt",
-    "char_vocab_file" : "../data/opinion0.train.conll12.train.char.txt",
+    "char_vocab_file" : r"C:\\Users\\Anya\\OneDrive\\Documents\\GitHub\\opinion_mining_with_syn_cons\\data\\char_vocab_file\\opinion0.train.conll12.train.char.txt",
 	"char_emb_size" : 8,
     "pos_emb_size" : 100,
     "cons_label_dim": 100,
