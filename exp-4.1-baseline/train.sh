@@ -4,9 +4,11 @@ export LD_LIBRARY_PATH=/usr/local/cuda:/usr/local/cuda/lib64:/opt/OpenBLAS/lib
 CONFIG="config.json"
 MODEL="model"
 
-TRAIN_PATH="../data/aaai19srl.train0.conll.json"
+# TRAIN_PATH="../data/aaai19srl.train0.conll.json"
+TRAIN_PATH="C:\Users\Anya\Downloads\conll-2012-train.v4\conll-2012\v4\data\mqpa_in_jsonformat\train.json"
 #TRAIN_PATH="../data/aaai19srl.dev0.conll.json"
-DEV_PATH="../data/aaai19srl.dev0.conll.json"
+# DEV_PATH="../data/aaai19srl.dev0.conll.json"
+DEV_PATH="C:\Users\Anya\Downloads\conll-2012-train.v4\conll-2012\v4\data\mqpa_in_jsonformat\dev.json"
 GOLD_PATH="../data/english/srl/conll05/conll05.devel.props.gold.txt"
 
 CONS_PATH="../data/constituent_conll12/ontonote5.0.train.constituents.json"

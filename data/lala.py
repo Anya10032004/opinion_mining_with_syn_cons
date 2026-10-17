@@ -1,0 +1,20 @@
+conll_u_data = """# sent_id = 1
+# text = The quick brown fox jumps over the lazy dog.
+1	The	the	DET	DT	Definite=Def|PronType=Art	5	det	_	_
+2	quick	quick	ADJ	JJ	Degree=Pos	5	amod	_	_
+3	brown	brown	ADJ	JJ	Degree=Pos	5	amod	_	_
+4	fox	fox	NOUN	NN	Number=Sing	5	nsubj	_	_
+5	jumps	jump	VERB	VBZ	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+6	over	over	ADP	IN	_	9	case	_	_
+7	the	the	DET	DT	Definite=Def|PronType=Art	9	det	_	_
+8	lazy	lazy	ADJ	JJ	Degree=Pos	9	amod	_	_
+9	dog	dog	NOUN	NN	Number=Sing	5	nmod	_	_
+10	.	.	PUNCT	.	_	5	punct	_	_
+"""
+
+# Write to file
+file_path = "Sample_ConllU_File.conllu"
+with open(file_path, "w") as file:
+    file.write(conll_u_data)
+
+file_path
