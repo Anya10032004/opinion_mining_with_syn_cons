@@ -1,28 +1,46 @@
 # 1. Specify the training data and output file
-train_path =   "../data/mpqa_in_jsonformat/train.json"
-output_path = "../data/char_vocab_file/opinion0.train.conll12.train.char.txt"
+import json
+train_path =   r"C:\Users\Anya\OneDrive\Documents\GitHub\opinion_mining_with_syn_cons\data\mqpa_in_jsonformat\train.json"
+output_path = r"C:\Users\Anya\OneDrive\Documents\GitHub\opinion_mining_with_syn_cons\data\char_vocab_file\opinion0.train.conll12.train.char.txt"
 import os
 os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+print("File exists:", os.path.exists(train_path))
+print("Folder exists:", os.path.exists(os.path.dirname(train_path)))
+
+if os.path.exists(os.path.dirname(train_path)):
+    print("Files in folder:")
+    print(os.listdir(os.path.dirname(train_path)))
 
 # 2. Collect unique characters
 characters = set()
 
 with open(train_path, "r", encoding="utf-8") as file:
-    for line in file:
+    for line_number, line in enumerate(file, start=1):
         line = line.strip()
 
-        # Skip empty lines
+        # # Skip empty lines
         if not line:
             continue
 
-        # Split a CoNLL line into columns
-        columns = line.split()
+        data = json.loads(line)
+        sentences = data["sentences"]
+
+        for word in sentences:
+            for char in word:
+                characters.add(char)
+
+
+        # # Split a CoNLL line into columns
+        # columns = line.split()
 
         # Assuming the first column contains the word
-        word = columns[0]
+        # word = columns[0]
 
-        for char in word:
-            characters.add(char)
+        # for char in word:
+        #     characters.add(char)
+
+       
 
 # 3. Sort characters for consistent ordering
 characters = sorted(characters)

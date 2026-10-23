@@ -255,6 +255,7 @@ def get_srl_data(config, train_data_path, dev_data_path,
 
     # Prepare word embedding dictionary.
     word_dict = Dictionary(padding_token=PADDING_TOKEN, unknown_token=UNKNOWN_TOKEN)
+    
     # Prepare char dictionary.
     char_dict = Dictionary(padding_token=PADDING_TOKEN, unknown_token=UNKNOWN_TOKEN)
     assert config.char_vocab_file != ""

@@ -1,4 +1,5 @@
-{"sentences": ["The", "Kimberley", "Provincial", "Hospital", "said", "it", "would", "probably", "know", "by", "Tuesday", "whether", "one", "of", "its", "patients", "had", "Congo", "Fever", "."], "orl": [[6, 8, 0, 3, "AGENT"], [6, 8, 6, 8, "DSE"], [6, 8, 11, 18, "TARGET"]]}
+
+[{"sentences": ["The", "Kimberley", "Provincial", "Hospital", "said", "it", "would", "probably", "know", "by", "Tuesday", "whether", "one", "of", "its", "patients", "had", "Congo", "Fever", "."], "orl": [[6, 8, 0, 3, "AGENT"], [6, 8, 6, 8, "DSE"], [6, 8, 11, 18, "TARGET"]]}
 {"sentences": ["Saeed", "said", "indications", "were", "that", "those", "tests", "would", "be", "negative", "too", "."], "orl": [[1, 1, 0, 0, "AGENT"], [1, 1, 1, 1, "DSE"], [1, 1, 5, 6, "TARGET"]]}
 {"sentences": ["He", "said", "it", "was", "his", "opinion", "that", "the", "patient", "--", "a", "woman", "--", "was", "suffering", "from", "tick", "bite", "fever", "."], "orl": [[4, 5, 0, 0, "AGENT"], [4, 5, 4, 5, "DSE"], [4, 5, 7, 11, "TARGET"]]}
 {"sentences": ["The", "woman", "was", "admitted", "to", "the", "hospital", "on", "Saturday", "after", "complaining", "of", "severe", "joint", "pains", "."], "orl": [[10, 10, 0, 1, "AGENT"], [10, 10, 10, 10, "DSE"], [10, 10, 12, 14, "TARGET"]]}
@@ -2447,3 +2448,4 @@
 {"sentences": ["Details", "of", "the", "restructuring", "wo", "n't", "be", "made", "final", "until", "regulators", "approve", "the", "regulations", "mandated", "by", "the", "new", "federal", "act", ",", "the", "company", "said", "."], "orl": [[11, 11, 10, 10, "AGENT"], [11, 11, 11, 11, "DSE"]]}
 {"sentences": ["Jay", "Stevens", ",", "an", "analyst", "with", "Dean", "Witter", "Reynolds", ",", "said", "he", "expected", "the", "Sunnyvale", ",", "Calif.", "."], "orl": [[12, 12, 11, 11, "AGENT"], [12, 12, 12, 12, "DSE"]]}
 {"sentences": ["company", "to", "earn", "35", "cents", "a", "share", "for", "the", "quarter", "and", "said", "the", "firm", "'s", "weaker", "profit", "was", "partly", "the", "result", "of", "increased", "competition", "from", "International", "Business", "Machines", "Corp.", "."], "orl": [[11, 11, 11, 11, "DSE"], [11, 11, 12, 16, "TARGET"]]}
+]

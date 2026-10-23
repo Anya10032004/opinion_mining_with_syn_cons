@@ -207,6 +207,7 @@ def evaluate_tagger(model, batched_dev_data, orl_cons, auto_dep_data, dev_gold_s
 def train_tagger(args):
     # get the parse configuration
     config = configuration.get_config(args.config)
+    print(config)
     config.span_based = args.span == "span"
     # set random seeds of numpy and torch
     random.seed(666)
@@ -525,4 +526,17 @@ if __name__ == "__main__":
         default="",
         help='(Optional) A additional information that specify this program.')
     args = parser.parse_args()
+
+    # print(args)
     train_tagger(args)
+# Namespace(config='config.json', 
+#           span='span', 
+#           model='model', 
+#           train='C:\\Users\\Anya\\Downloads\\conll-2012-train.v4\\conll-2012\\v4\\data\\mqpa_in_jsonformat\\train.json', 
+#           dev='C:\\Users\\Anya\\Downloads\\conll-2012-train.v4\\conll-2012\\v4\\data\\mqpa_in_jsonformat\\dev.json', 
+#           cons_trees='../data/constituent_conll12/ontonote5.0.train.constituents.json', 
+#           auto_cons_trees='../data/sentences/orl.2.0.all0.sentences.txt.constituent.txt', 
+#           dep_trees='C:/Program Files/Git/data2/qrxia/SRL-w-Heterogenous-Dep/data/english/dependency/ptb_from_baidu_from_n171/ptb.english.conll.train.txt.opentest.tag.projective', 
+#           auto_dep_trees='../data/dependency_trees/orl.2.0.auto.dep.txt', gold='../data/english/srl/conll05/conll05.devel.props.gold.txt', 
+          
+#           gpu='GPU\\_ID', info='orl baseline bert')

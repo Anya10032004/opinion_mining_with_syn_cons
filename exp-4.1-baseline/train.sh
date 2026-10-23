@@ -1,8 +1,8 @@
 export PATH=/usr/local/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda:/usr/local/cuda/lib64:/opt/OpenBLAS/lib
 
-CONFIG="config.json"
-MODEL="model"
+CONFIG="C:\Users\Anya\OneDrive\Documents\GitHub\opinion_mining_with_syn_cons\exp-4.1-baseline\config.json"
+MODEL="C:\Users\Anya\OneDrive\Documents\GitHub\opinion_mining_with_syn_cons\src\orl-4.1\neural_srl\pytorch\model.py"
 
 # TRAIN_PATH="../data/aaai19srl.train0.conll.json"
 TRAIN_PATH="C:\Users\Anya\Downloads\conll-2012-train.v4\conll-2012\v4\data\mqpa_in_jsonformat\train.json"
