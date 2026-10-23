@@ -4,9 +4,8 @@ import json
 from argparse import Namespace
 
 
-def get_config(config_filepath):
+def get_config(config_filepath): # for config.json 
   with open(config_filepath, 'r') as config_file:
           conf = json.load(config_file, object_hook=lambda d: Namespace(**d))
-          print(conf)
           return conf
 

@@ -207,7 +207,7 @@ def evaluate_tagger(model, batched_dev_data, orl_cons, auto_dep_data, dev_gold_s
 def train_tagger(args):
     # get the parse configuration
     config = configuration.get_config(args.config)
-    print(config)
+    # print(config)
     config.span_based = args.span == "span"
     # set random seeds of numpy and torch
     random.seed(666)

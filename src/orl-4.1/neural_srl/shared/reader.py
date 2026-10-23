@@ -134,7 +134,7 @@ class srl_sentence():
                 print(start, 'in span end', self.doc_key, self.sentences)
 
 
-def get_srl_sentences(filepath):
+def get_srl_sentences(filepath): # train_fixed.json, dev_fixed.json
     """
     Data loading with json format.
     """
@@ -351,3 +351,11 @@ def get_srl_test_data(filepath, config, word_dict, char_dict, label_dict,
     word_embedding = np.asarray([word_to_embeddings[w] for w in word_dict.idx2str])
     word_embedding_shape = [len(word_embedding), len(word_embedding[0])]
     return (test_samples, auto_cons, auto_deps, word_embedding, word_embedding_shape)
+    
+
+# Try here:
+# config = configuration.get_config(args.config)
+# haha = get_srl_data(config, args.train, args.dev,
+#                                  args.cons_trees, args.auto_cons_trees,
+#                                  args.dep_trees, args.auto_dep_trees
+#                                  )
